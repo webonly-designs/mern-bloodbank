@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const userSchema = new moongoose.Schema({
+const userSchema = new mongoose.Schema({
     role:{
         type: String,
         required: [true, 'rolde is required'],
-        enum: ['admin', 'organisation', 'user', 'hospital']
+        enum: ['admin', 'organisation', 'donar', 'hospital']
     },
     name:{
         type: String,
